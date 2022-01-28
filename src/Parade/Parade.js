@@ -3,7 +3,6 @@ import React from 'react';
 import Animal from './Animal';
 
 export default function Parade({ parade, handleParade }) {
-  console.log(parade);
   return (
     <div className='parade-container'>
       <div className='animals'>
