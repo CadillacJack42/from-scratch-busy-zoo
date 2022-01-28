@@ -26,9 +26,9 @@ export default function Fight({
       
       <div className='buttons'>
         <button onClick={() => handleUnicornSizeIncrement()}>Unicorn Gain Power</button>
-        <button onClick={() => handleUnicornSizeDecrement()}>Unicorn Lose Power</button>
+        <button onClick={() => handleLionSizeDecrement()}>Unicorn attack Lion</button>
         <button onClick={() => handleLionSizeIncrement()}>Lion Gain Power</button>
-        <button onClick={() => handleLionSizeDecrement()}>Lion Lose Power</button>
+        <button onClick={() => handleUnicornSizeDecrement()}>Lion Attack Unicorn</button>
       </div>
     </div>
   );

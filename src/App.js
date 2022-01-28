@@ -34,6 +34,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Welcome To Cadillac Jacks Zoo</h1>
       <Fight 
         unicornSize={unicornSize}
         lionSize={lionSize}
