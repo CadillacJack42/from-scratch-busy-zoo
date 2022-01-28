@@ -10,8 +10,8 @@
 
 .animal-span {
     height: 15px;
-    /* width: 15px; */
     margin: 0 5px;
+    font-size: 3rem;
 }
 
 .buttons-container {
