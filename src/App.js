@@ -2,13 +2,14 @@ import './App.css';
 import { useState } from 'react';
 import Fight from './Fight/Fight';
 import Open from './Open/Open';
+import Parade from './Parade/Parade';
 
 function App() {
 
   const [isOpen, setIsOpen] = useState(false);
   const [unicornSize, setUnicornSize] = useState(10);
   const [lionSize, setLionSize] = useState(10);
-  const [parade, setParade] = useState(['aligator', 'rhino', 'snake']);
+  const [parade, setParade] = useState(['lion', 'tiger', 'bear']);
 
   const handleUnicornSizeIncrement = () => {
     setUnicornSize(unicornSize + 1);
@@ -43,6 +44,10 @@ function App() {
       <Open 
         isOpen={isOpen}
         handleOpenChange={handleOpenChange}
+      />
+      <Parade 
+        parade={parade}
+        handleParade={handleParade}
       />
     </div>
   );
