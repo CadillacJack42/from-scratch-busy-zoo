@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import Fight from './Fight/Fight';
+import Open from './Open/Open';
 
 function App() {
 
@@ -39,6 +40,10 @@ function App() {
         handleLionSizeIncrement={handleLionSizeIncrement}
         handleUnicornSizeDecrement={handleUnicornSizeDecrement}
         handleLionSizeDecrement={handleLionSizeDecrement} />
+      <Open 
+        isOpen={isOpen}
+        handleOpenChange={handleOpenChange}
+      />
     </div>
   );
 }
