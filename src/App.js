@@ -5,7 +5,6 @@ import Open from './Open/Open';
 import Parade from './Parade/Parade';
 
 function App() {
-
   const [isOpen, setIsOpen] = useState(false);
   const [unicornSize, setUnicornSize] = useState(10);
   const [lionSize, setLionSize] = useState(10);
@@ -35,21 +34,16 @@ function App() {
   return (
     <div className="App">
       <h1>Welcome To Cadillac Jacks Zoo</h1>
-      <Fight 
+      <Fight
         unicornSize={unicornSize}
         lionSize={lionSize}
         handleUnicornSizeIncrement={handleUnicornSizeIncrement}
         handleLionSizeIncrement={handleLionSizeIncrement}
         handleUnicornSizeDecrement={handleUnicornSizeDecrement}
-        handleLionSizeDecrement={handleLionSizeDecrement} />
-      <Open 
-        isOpen={isOpen}
-        handleOpenChange={handleOpenChange}
+        handleLionSizeDecrement={handleLionSizeDecrement}
       />
-      <Parade 
-        parade={parade}
-        handleParade={handleParade}
-      />
+      <Open isOpen={isOpen} handleOpenChange={handleOpenChange} />
+      <Parade parade={parade} handleParade={handleParade} />
     </div>
   );
 }
